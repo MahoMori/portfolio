@@ -11,7 +11,7 @@ const ProjectCard = ({ data }) => {
   return (
     <>
       <figure className="card" onClick={handleModalOpen}>
-        <img src={data.image} alt="project" />
+        {/* <img src={data.image} alt="project" /> */}
         <figcaption>{data.title}</figcaption>
       </figure>
       {isOpen && <ProjectModal data={data} handleModalOpen={handleModalOpen} />}

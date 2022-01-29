@@ -2,12 +2,14 @@ import React from "react";
 import projectsData from "./projectsData";
 import ProjectCard from "./ProjectCard";
 
+import { RowContainer, Row, Row1, Row2 } from "./projects.style";
+
 const Projects = () => {
   return (
-    <div className="row-container">
-      <div className="row1"></div>
-
-      <div className="row2"></div>
+    <RowContainer>
+      <Row1></Row1>
+      <Row2></Row2>
+      <Row gridArea="1" color="blue" className="row1"></Row>
 
       <div className="title-l"></div>
       <div className="title-m">Projects</div>
@@ -26,7 +28,7 @@ const Projects = () => {
       </div>
 
       <div className="row3"></div>
-    </div>
+    </RowContainer>
   );
 };
 export default Projects;
