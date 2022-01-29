@@ -1,10 +1,12 @@
+import ReactDOM from 'react-dom'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectModal = ({ data, handleModalOpen }) => {
   const { title, image, language, pageLink, githubLink, description } = data;
-  return (
+  return ReactDOM.createPortal((
     <>
       {/* <Modal> */}
       {/* <img src={image} alt="project" /> */}
@@ -17,7 +19,7 @@ const ProjectModal = ({ data, handleModalOpen }) => {
       <p>{description}</p>
       {/* </Modal>; */}
     </>
-  );
+  ), document.body);
 };
 
 export default ProjectModal;

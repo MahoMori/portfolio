@@ -1,21 +1,40 @@
-import myImg from "../../assets/my-img.png";
-import IconSet from "../IconSet";
+import IconSet from "../icon-set/IconSet";
+
+import {
+  HeroSection,
+  ImgContainer,
+  MyImg,
+  TextBackground,
+  TextIconContainer,
+  TextBlock,
+  DecoratedSpan,
+} from "./hero.style";
 
 const Hero = () => (
-  <section>
-    <div>
-      Hello, I’m <span>Maho</span>.
-    </div>
-    <div>
-      I’m a <span>Frontend Developer</span>
-      focusing on <span>React</span>
-      and passionate about learning new skills!
-    </div>
-    <div>
-      <IconSet />
-    </div>
-    <img src={require("../../assets/my-img.png")} alt="my-img" />
-  </section>
+  <HeroSection>
+    <ImgContainer>
+      <MyImg src={require("../../assets/my-img.png")} alt="my-img" />
+    </ImgContainer>
+    <TextBackground>
+      <TextIconContainer>
+        <TextBlock>
+          <p>
+            Hello, I’m <DecoratedSpan>Maho</DecoratedSpan>.
+          </p>
+          {/* </TextBlock>
+      <TextBlock> */}
+          <p>
+            I’m a <DecoratedSpan>Frontend Developer</DecoratedSpan>
+          </p>
+          <p>
+            focusing on <DecoratedSpan>React</DecoratedSpan>
+          </p>
+          <p>and passionate about learning new skills!</p>
+        </TextBlock>
+        <IconSet />
+      </TextIconContainer>
+    </TextBackground>
+  </HeroSection>
 );
 
 export default Hero;

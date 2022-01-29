@@ -1,16 +1,18 @@
+import { HeaderContainer, NameDiv, NavUl, NavLi } from "./header.style";
+
 const Header = () => (
-  <header>
-    <div>
+  <HeaderContainer>
+    <NameDiv>
       <h1>Maho Morinaga</h1>
-    </div>
+    </NameDiv>
     <nav>
-      <ul>
-        <li>Projects</li>
-        <li>About Me</li>
-        <li>Resume</li>
-      </ul>
+      <NavUl>
+        <NavLi>Projects</NavLi>
+        <NavLi>About Me</NavLi>
+        <NavLi>Resume</NavLi>
+      </NavUl>
     </nav>
-  </header>
+  </HeaderContainer>
 );
 
 export default Header;
