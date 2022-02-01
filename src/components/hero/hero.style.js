@@ -1,58 +1,53 @@
 import styled from "styled-components";
+import { color } from "../../globalStyle";
 
 export const HeroSection = styled.section`
-  background-color: #ff8b49;
+  background-color: ${color.orange};
+
   height: calc(100vh * 0.8);
-  position: relative;
-`;
-
-export const ImgContainer = styled.figure`
-  //   background-color: pink;
-
-  height: 100%;
-  width: 30%;
 
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  top: 15%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const MyImg = styled.img`
   height: 30rem;
   width: auto;
+
+  float: left;
 `;
 
-export const TextBackground = styled.div`
-  //   background-color: skyblue;
+export const Container = styled.div`
+  // background-color: skyblue;
 
   height: 100%;
-  width: 70%;
+  min-width: 70vw;
 
-  position: absolute;
-  right: 0;
+  display: flex;
+  align-items: center;
 `;
 
 export const TextIconContainer = styled.div`
-  //   background-color: pink;
+  // background-color: pink;
 
-  width: 90%;
+  width: 100%;
 
-  text-align: center;
-
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  & > div:nth-child(2) {
+    // background-color: yellow;
+    margin: 2.5rem 0 2.25rem;
+  }
 `;
 
 export const TextBlock = styled.div`
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
+  font-size: ${(props) => props.fontSize};
+  // font-size: 3.5rem;
 `;
 
 export const DecoratedSpan = styled.span`
-  font-size: 1.5em;
+  font-size: ${(props) => props.fontSize};
+  // font-size: 1.5em;
 
-  text-shadow: 0.25rem 0.25rem #fff;
+  text-shadow: 0.05em 0.05em ${color.white};
 `;

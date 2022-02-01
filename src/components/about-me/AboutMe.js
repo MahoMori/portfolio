@@ -1,10 +1,12 @@
+import { TitleContainer } from "../projects/projects.style";
 import { Marker } from "./aboutMe.style";
 
 const AboutMe = () => (
   <div className="row-container">
-    <div className="title-l"></div>
-    <div className="title-m">About Me</div>
-    <div className="title-r"></div>
+    <TitleContainer>
+      <h2>About Me</h2>
+      <hr />
+    </TitleContainer>
 
     <div className="row-section1">
       <p>

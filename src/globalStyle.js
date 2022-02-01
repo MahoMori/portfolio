@@ -1,5 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
+export const color = {
+  orange: "#FF8B49",
+  lightGreen: "#7CF3A0",
+  mint: "#B4F8C8",
+  yellow: "#F7CD34",
+  pink: "#EC4E59",
+  skyBlue: "#4ED7E9",
+  navy: "#200D39",
+  white: "#fff",
+};
+
 const GlobalStyle = createGlobalStyle`
 * {
     margin:0;

@@ -2,9 +2,8 @@ import IconSet from "../icon-set/IconSet";
 
 import {
   HeroSection,
-  ImgContainer,
+  Container,
   MyImg,
-  TextBackground,
   TextIconContainer,
   TextBlock,
   DecoratedSpan,
@@ -12,28 +11,28 @@ import {
 
 const Hero = () => (
   <HeroSection>
-    <ImgContainer>
+    <Container>
       <MyImg src={require("../../assets/my-img.png")} alt="my-img" />
-    </ImgContainer>
-    <TextBackground>
+
       <TextIconContainer>
-        <TextBlock>
+        <TextBlock fontSize="3.5rem">
           <p>
-            Hello, I’m <DecoratedSpan>Maho</DecoratedSpan>.
+            Hello, I’m <DecoratedSpan fontSize="1.75em">Maho</DecoratedSpan>.
           </p>
-          {/* </TextBlock>
-      <TextBlock> */}
+        </TextBlock>
+        <TextBlock fontSize="2rem">
           <p>
-            I’m a <DecoratedSpan>Frontend Developer</DecoratedSpan>
+            I’m a{" "}
+            <DecoratedSpan fontSize="1.5em">Frontend Developer</DecoratedSpan>
           </p>
           <p>
-            focusing on <DecoratedSpan>React</DecoratedSpan>
+            focusing on <DecoratedSpan fontSize="1.5em">React</DecoratedSpan>
           </p>
           <p>and passionate about learning new skills!</p>
         </TextBlock>
         <IconSet />
       </TextIconContainer>
-    </TextBackground>
+    </Container>
   </HeroSection>
 );
 
