@@ -3,7 +3,7 @@ import { color } from "../../globalStyle";
 
 export const ProjectsContainer = styled.section`
   // text-align: center;
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
 `;
 
 export const TitleContainer = styled.div`
@@ -19,4 +19,11 @@ export const TitleContainer = styled.div`
 
 export const TitleH2 = styled.h2`
   font-size: 2.25rem;
+`;
+
+export const CardContainer = styled.div`
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 `;

@@ -2,7 +2,12 @@ import React from "react";
 import projectsData from "./projectsData";
 import ProjectCard from "./ProjectCard";
 
-import { ProjectsContainer, TitleContainer, TitleH2 } from "./projects.style";
+import {
+  ProjectsContainer,
+  TitleContainer,
+  TitleH2,
+  CardContainer,
+} from "./projects.style";
 
 const Projects = () => {
   return (
@@ -10,12 +15,12 @@ const Projects = () => {
       <TitleContainer>
         <TitleH2>Projects</TitleH2>
       </TitleContainer>
-      <div className="row-card1">
+      <CardContainer>
         {projectsData.length > 0 &&
           projectsData.map((project, i) => (
-            <ProjectCard key={i} data={project} />
+            <ProjectCard key={i} data={project} i={i} />
           ))}
-      </div>
+      </CardContainer>
     </ProjectsContainer>
   );
 };

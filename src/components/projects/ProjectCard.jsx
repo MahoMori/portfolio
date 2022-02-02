@@ -2,7 +2,14 @@ import React, { useState } from "react";
 
 import ProjectModal from "./ProjectModal";
 
-const ProjectCard = ({ data }) => {
+import {
+  Card,
+  CardImage,
+  CardImageCaption,
+  CaptionP,
+} from "./projectCard.style";
+
+const ProjectCard = ({ data, i }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleModalOpen = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
@@ -10,10 +17,12 @@ const ProjectCard = ({ data }) => {
 
   return (
     <>
-      <figure className="card" onClick={handleModalOpen}>
-        <img src={data.image} alt="project" />
-        {/* <figcaption>{data.title}</figcaption> */}
-      </figure>
+      <Card>
+        <CardImage src={data.image} alt="project" />
+        <CardImageCaption i={i} onClick={handleModalOpen}>
+          <CaptionP>{data.title}</CaptionP>
+        </CardImageCaption>
+      </Card>
       {isOpen && <ProjectModal data={data} handleModalOpen={handleModalOpen} />}
     </>
   );
