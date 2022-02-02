@@ -17,9 +17,9 @@ const ProjectCard = ({ data, i }) => {
 
   return (
     <>
-      <Card>
+      <Card onClick={handleModalOpen}>
         <CardImage src={data.image} alt="project" />
-        <CardImageCaption i={i} onClick={handleModalOpen}>
+        <CardImageCaption i={i}>
           <CaptionP>{data.title}</CaptionP>
         </CardImageCaption>
       </Card>

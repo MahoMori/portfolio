@@ -11,6 +11,15 @@ export const color = {
   white: "#fff",
 };
 
+export const sansSerif = {
+  // import:
+  //   "@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');",
+  // fontFamily: "font-family: 'Source Sans Pro', sans-serif;",
+  import:
+    "@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');",
+  fontFamily: "font-family: 'Raleway', sans-serif;",
+};
+
 const GlobalStyle = createGlobalStyle`
 * {
     margin:0;
