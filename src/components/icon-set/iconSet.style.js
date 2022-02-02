@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { color } from "../../globalStyle";
 
 export const IconContainer = styled.div`
   font-size: 2.25rem;
@@ -9,5 +10,5 @@ export const IconContainer = styled.div`
 `;
 
 export const StyledLink = styled.a`
-  color: #fff;
+  color: ${color.white};
 `;

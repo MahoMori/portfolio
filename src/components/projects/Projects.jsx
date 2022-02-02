@@ -3,7 +3,7 @@ import projectsData from "./projectsData";
 import ProjectCard from "./ProjectCard";
 
 import {
-  ProjectsContainer,
+  SectionContainer,
   TitleContainer,
   TitleH2,
   CardContainer,
@@ -11,7 +11,7 @@ import {
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <SectionContainer>
       <TitleContainer>
         <TitleH2>Projects</TitleH2>
       </TitleContainer>
@@ -21,7 +21,7 @@ const Projects = () => {
             <ProjectCard key={i} data={project} i={i} />
           ))}
       </CardContainer>
-    </ProjectsContainer>
+    </SectionContainer>
   );
 };
 export default Projects;

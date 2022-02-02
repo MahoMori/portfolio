@@ -1,17 +1,23 @@
-import { TitleContainer } from "../projects/projects.style";
-import { Marker } from "./aboutMe.style";
+import { Marker, AboutMeText } from "./aboutMe.style";
+import {
+  SectionContainer,
+  TitleContainer,
+  TitleH2,
+} from "../projects/projects.style";
 
 const AboutMe = () => (
-  <div className="row-container">
+  <SectionContainer>
     <TitleContainer>
-      <h2>About Me</h2>
-      <hr />
+      <TitleH2>About Me</TitleH2>
     </TitleContainer>
 
-    <div className="row-section1">
+    <AboutMeText>
       <p>
         I started this tech path in 2021. It has been challenging, but each
         challenges taught me the most important thing.
+      </p>
+
+      <p>
         <Marker>Coding is fun!</Marker> (Especially when I see a light after
         looking for a solution for bugs.)
       </p>
@@ -21,10 +27,8 @@ const AboutMe = () => (
         details. I constantly keep trying to broaden what I can do, and most
         importantly, <Marker>love what I do!</Marker>
       </p>
-    </div>
-
-    <div className="row1"></div>
-  </div>
+    </AboutMeText>
+  </SectionContainer>
 );
 
 export default AboutMe;

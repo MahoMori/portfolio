@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { color } from "../../globalStyle";
 
-export const ProjectsContainer = styled.section`
-  // text-align: center;
-  padding: 3rem 4rem;
+export const SectionContainer = styled.section`
+  padding: 4rem 4rem 0;
 `;
 
 export const TitleContainer = styled.div`
@@ -22,7 +21,8 @@ export const TitleH2 = styled.h2`
 `;
 
 export const CardContainer = styled.div`
-  margin: 2rem 0;
+  margin: 2.5rem 0;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
