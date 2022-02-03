@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { StyledLink } from "../icon-set/iconSet.style";
-import { color, sansSerif } from "../../globalStyle";
+import { color, sansSerif, StyledLink } from "../../globalStyle";
 
 export const ModalOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.5);

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const color = {
   orange: "#FF8B49",
@@ -20,10 +20,17 @@ export const sansSerif = {
   fontFamily: "font-family: 'Raleway', sans-serif;",
 };
 
+export const StyledLink = styled.a`
+  color: ${color.white};
+  text-decoration: none;
+`;
+
+// GlobalStyle
 const GlobalStyle = createGlobalStyle`
 * {
     margin:0;
     padding: 0;
+    scroll-behavior : smooth;
 }
 body {
 font-family: 'Zilla Slab', serif;

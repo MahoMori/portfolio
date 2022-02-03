@@ -6,7 +6,7 @@ import {
 } from "../projects/projects.style";
 
 const AboutMe = () => (
-  <SectionContainer>
+  <SectionContainer id="about-me">
     <TitleContainer>
       <TitleH2>About Me</TitleH2>
     </TitleContainer>

@@ -1,4 +1,5 @@
-import { IconContainer, StyledLink } from "./iconSet.style";
+import { IconContainer } from "./iconSet.style";
+import { StyledLink } from "../../globalStyle";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

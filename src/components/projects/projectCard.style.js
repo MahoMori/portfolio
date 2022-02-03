@@ -4,9 +4,12 @@ import { color } from "../../globalStyle";
 export const Card = styled.figure`
   position: relative;
 
+  box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(137, 137, 137, 0.3);
+
   cursor: pointer;
 
   overflow: hidden;
+  height: 100%;
 
   &:hover figcaption {
     bottom: 0;
@@ -15,6 +18,7 @@ export const Card = styled.figure`
 
 export const CardImage = styled.img`
   width: 100%;
+  height: 100%;
 `;
 
 let colorChange = [1, 2];
