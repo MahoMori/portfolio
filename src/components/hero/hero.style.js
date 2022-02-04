@@ -121,9 +121,9 @@ export const TextBlock = styled.div`
     font-size: 1.75rem;
   }
 
-  @media ${device.tablet} {
-    font-size: 1.75rem;
-  }
+  // @media ${device.tablet} {
+  //   font-size: 1.75rem;
+  // }
 
   @media ${device.laptop} {
     font-size: 2.25rem;

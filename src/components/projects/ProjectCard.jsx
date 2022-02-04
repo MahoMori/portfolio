@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMedia } from "use-media";
 
 import ProjectModal from "./ProjectModal";
 
@@ -15,11 +16,13 @@ const ProjectCard = ({ data, i }) => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
+  const isAboveLaptop = useMedia({ minWidth: "1024px" });
+
   return (
     <>
-      <Card onClick={handleModalOpen}>
+      <Card onClick={isAboveLaptop ? handleModalOpen : ""} ontouchstart="">
         <CardImage src={data.image} alt="project" />
-        <CardImageCaption i={i}>
+        <CardImageCaption i={i} onClick={isAboveLaptop ? "" : handleModalOpen}>
           <CaptionP>{data.title}</CaptionP>
         </CardImageCaption>
       </Card>

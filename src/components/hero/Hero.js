@@ -1,4 +1,4 @@
-import useMedia from "use-media";
+import { useMedia } from "use-media";
 
 import IconSet from "../icon-set/IconSet";
 
@@ -16,8 +16,6 @@ import {
 
 const Hero = () => {
   const isAboveTablet = useMedia({ minWidth: "768px" });
-  const isAboveLaptop = useMedia({ minWidth: "1024px" });
-  const isTablet = useMedia({ minWidth: "768px", maxWidth: "1023px" });
 
   return (
     <HeroSection>

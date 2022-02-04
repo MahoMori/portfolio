@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { color } from "../../globalStyle";
+import { device } from "../../assets/screenSize";
 
 export const Card = styled.figure`
   position: relative;
@@ -11,7 +12,8 @@ export const Card = styled.figure`
   overflow: hidden;
   height: 100%;
 
-  &:hover figcaption {
+  &:hover figcaption,
+  &:active figcaption {
     bottom: 0;
   }
 `;
@@ -21,8 +23,16 @@ export const CardImage = styled.img`
   height: 100%;
 `;
 
+const oneThreeColumns = (i) => {
+  if (i % 2 === 0) {
+    return `${color.skyBlue}`;
+  } else {
+    return `${color.lightGreen}`;
+  }
+};
+
 let colorChange = [1, 2];
-const check = (i) => {
+const twoColumns = (i) => {
   if (colorChange.includes(i)) {
     colorChange.push(i + 4);
     return `${color.lightGreen}`;
@@ -32,8 +42,6 @@ const check = (i) => {
 };
 
 export const CardImageCaption = styled.figcaption`
-  background-color: ${(props) => check(props.i)};
-
   width: 100%;
   height: 100%;
 
@@ -45,12 +53,30 @@ export const CardImageCaption = styled.figcaption`
   align-items: center;
 
   transition: 0.5s ease-in-out;
+
+  @media ${device.mobileS} {
+    background-color: ${(props) => oneThreeColumns(props.i)};
+  }
+
+  @media ${device.tablet} {
+    background-color: ${(props) => twoColumns(props.i)};
+  }
+
+  @media ${device.desktop} {
+    background-color: ${(props) => oneThreeColumns(props.i)};
+  }
 `;
 
 export const CaptionP = styled.p`
   color: ${color.white};
 
-  font-size: 2rem;
+  @media ${device.mobileS} {
+    font-size: 2rem;
+  }
+
+  @media ${device.laptopL} {
+    font-size: 3rem;
+  }
 
   //   font-weight: bold;
 `;
