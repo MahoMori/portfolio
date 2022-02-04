@@ -17,4 +17,12 @@ export const IconContainer = styled.div`
       margin: 0 3rem;
     }
   }
+
+  @media ${device.laptopL} {
+    font-size: 3rem;
+
+    & > * {
+      margin: 0 3.2rem;
+    }
+  }
 `;

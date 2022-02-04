@@ -8,6 +8,8 @@ import {
   MyImg,
   MyImgIcon,
   TextIconContainer,
+  NameTextBlock,
+  NameDecoratedSpan,
   TextBlock,
   DecoratedSpan,
 } from "./hero.style";
@@ -30,42 +32,17 @@ const Hero = () => {
         )}
 
         <TextIconContainer>
-          <TextBlock
-            fontSize={
-              isTablet ? "2.5rem" : isAboveLaptop ? "3.5rem" : "1.75rem"
-            }
-          >
-            {/* <TextBlock> */}
+          <NameTextBlock>
             <p>
-              Hello, I’m{" "}
-              <DecoratedSpan
-                fontSize={
-                  isTablet ? "0.75em" : isAboveLaptop ? "1.75em" : "1.25em"
-                }
-              >
-                Maho
-              </DecoratedSpan>
-              .
+              Hello, I’m <NameDecoratedSpan>Maho</NameDecoratedSpan>.
             </p>
-          </TextBlock>
-          <TextBlock
-            fontSize={isTablet ? "1.5rem" : isAboveLaptop ? "2rem" : "1.25rem"}
-          >
+          </NameTextBlock>
+          <TextBlock>
             <p>
-              I’m a{" "}
-              <DecoratedSpan
-                fontSize={isTablet ? "1.25em" : isAboveLaptop ? "1.5em" : "1em"}
-              >
-                Frontend Developer
-              </DecoratedSpan>
+              I’m a <DecoratedSpan>Frontend&nbsp;Developer</DecoratedSpan>
             </p>
             <p>
-              focusing on{" "}
-              <DecoratedSpan
-                fontSize={isTablet ? "1.25em" : isAboveLaptop ? "1.5em" : "1em"}
-              >
-                React
-              </DecoratedSpan>
+              focusing on <DecoratedSpan>React</DecoratedSpan>
             </p>
             <p>and passionate about learning new&nbsp;skills!</p>
           </TextBlock>
