@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { color } from "../../globalStyle";
+import { device } from "../../assets/screenSize";
 
 export const HeaderContainer = styled.header`
   background-color: ${color.orange};
@@ -15,11 +16,26 @@ export const HeaderContainer = styled.header`
 `;
 
 export const NameDiv = styled.div`
-  font-size: 1.75rem;
-  cursor: pointer;
+  // cursor: pointer;
+
+  @media ${device.mobileS} {
+    font-size: 1rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 1.75rem;
+  }
 `;
 
-export const HeaderNav = styled.nav``;
+export const HeaderNav = styled.nav`
+  @media ${device.mobileS} {
+    display: none;
+  }
+
+  @media ${device.tablet} {
+    display: block;
+  }
+`;
 
 export const NavUl = styled.ul`
   & > li:nth-child(2) {

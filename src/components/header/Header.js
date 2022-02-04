@@ -1,4 +1,10 @@
-import { HeaderContainer, NameDiv, NavUl, NavLi } from "./header.style";
+import {
+  HeaderContainer,
+  NameDiv,
+  HeaderNav,
+  NavUl,
+  NavLi,
+} from "./header.style";
 import { StyledLink } from "../../globalStyle";
 
 import Resume from "../../assets/Resume_Maho_Morinaga.pdf";
@@ -8,7 +14,7 @@ const Header = () => (
     <NameDiv>
       <h1>Maho Morinaga</h1>
     </NameDiv>
-    <nav>
+    <HeaderNav>
       <NavUl>
         <NavLi>
           <StyledLink href="#project">Projects</StyledLink>
@@ -22,7 +28,7 @@ const Header = () => (
           </StyledLink>
         </NavLi>
       </NavUl>
-    </nav>
+    </HeaderNav>
   </HeaderContainer>
 );
 

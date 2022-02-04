@@ -1,15 +1,42 @@
 import styled from "styled-components";
 import { color } from "../../globalStyle";
+import { device } from "../../assets/screenSize";
 
 export const HeroSection = styled.section`
   background-color: ${color.orange};
 
-  height: calc(100vh * 0.8);
+  height: calc(100vh * 0.9);
+  // height: 100vh;
 
   text-align: center;
 
   display: flex;
   justify-content: center;
+`;
+
+export const Container = styled.div`
+  background-color: skyblue;
+
+  // max-width: 70vw;
+  max-width: 90vw;
+
+  display: flex;
+
+  @media ${device.mobileS} {
+    padding: 1rem 0;
+
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  @media ${device.tablet} {
+    padding: 0;
+
+    flex-wrap: nowrap;
+    justify-content: left;
+
+    align-items: center;
+  }
 `;
 
 export const MyImg = styled.img`
@@ -19,24 +46,29 @@ export const MyImg = styled.img`
   float: left;
 `;
 
-export const Container = styled.div`
-  // background-color: skyblue;
+export const MyImgIcon = styled.img`
+  height: 10rem;
+  width: auto;
 
-  height: 100%;
-  min-width: 70vw;
-
-  display: flex;
-  align-items: center;
+  // margin-top: 1rem;
 `;
 
 export const TextIconContainer = styled.div`
-  // background-color: pink;
+  background-color: pink;
 
   width: 100%;
+  height: fit-content;
 
   & > div:nth-child(2) {
     // background-color: yellow;
-    margin: 2.5rem 0 2.25rem;
+
+    @media ${device.mobileS} {
+      margin: 1rem 0;
+    }
+
+    @media ${device.laptop} {
+      margin: 2.5rem 0 2.25rem;
+    }
   }
 `;
 
@@ -47,7 +79,7 @@ export const TextBlock = styled.div`
 
 export const DecoratedSpan = styled.span`
   font-size: ${(props) => props.fontSize};
-  // font-size: 1.5em;
+  font-size: 1.5em;
 
   text-shadow: 0.05em 0.05em ${color.white};
 `;
