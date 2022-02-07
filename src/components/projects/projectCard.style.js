@@ -52,7 +52,7 @@ export const CardImageCaption = styled.figcaption`
   justify-content: center;
   align-items: center;
 
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-out;
 
   @media ${device.mobileS} {
     background-color: ${(props) => oneThreeColumns(props.i)};

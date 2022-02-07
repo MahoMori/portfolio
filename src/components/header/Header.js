@@ -1,35 +1,51 @@
+import React, { useState } from "react";
+
+import Resume from "../../assets/Resume_Maho_Morinaga.pdf";
+
 import {
   HeaderContainer,
   NameDiv,
   HeaderNav,
   NavUl,
   NavLi,
+  HamburgerContainer,
+  HamburgerSpan,
 } from "./header.style";
 import { StyledLink } from "../../globalStyle";
 
-import Resume from "../../assets/Resume_Maho_Morinaga.pdf";
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleMenuOpen = () => {
+    isOpen ? setIsOpen(false) : setIsOpen(true);
+  };
 
-const Header = () => (
-  <HeaderContainer>
-    <NameDiv>
-      <h1>Maho Morinaga</h1>
-    </NameDiv>
-    <HeaderNav>
-      <NavUl>
-        <NavLi>
-          <StyledLink href="#project">Projects</StyledLink>
-        </NavLi>
-        <NavLi>
-          <StyledLink href="#about-me">About Me</StyledLink>
-        </NavLi>
-        <NavLi>
-          <StyledLink href={Resume} target="_blank">
-            Resume
-          </StyledLink>
-        </NavLi>
-      </NavUl>
-    </HeaderNav>
-  </HeaderContainer>
-);
+  return (
+    <HeaderContainer>
+      <NameDiv>
+        <h1>Maho Morinaga</h1>
+      </NameDiv>
+
+      <HeaderNav isOpen={isOpen}>
+        <NavUl isOpen={isOpen}>
+          <NavLi>
+            <StyledLink href="#project">Projects</StyledLink>
+          </NavLi>
+          <NavLi>
+            <StyledLink href="#about-me">About Me</StyledLink>
+          </NavLi>
+          <NavLi>
+            <StyledLink href={Resume} target="_blank">
+              Resume
+            </StyledLink>
+          </NavLi>
+        </NavUl>
+      </HeaderNav>
+
+      <HamburgerContainer onClick={handleMenuOpen}>
+        <HamburgerSpan></HamburgerSpan>
+      </HamburgerContainer>
+    </HeaderContainer>
+  );
+};
 
 export default Header;

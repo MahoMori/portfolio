@@ -1,7 +1,8 @@
 const projectsData = [
   {
     title: "Space Gallery",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/space-gallery.png"),
+    modalImage: require("../../assets/projects-image/kari.jpg"),
     language: "React, styled-components",
     pageLink: "test",
     githubLink: "test",
@@ -10,7 +11,8 @@ const projectsData = [
   },
   {
     title: "To Go/To Do List",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/togo.png"),
+    modalImage: require("../../assets/projects-image/kari.jpg"),
     language: "React, Redux toolkit, Material UI",
     pageLink: "test",
     githubLink: "test",
@@ -19,7 +21,8 @@ const projectsData = [
   },
   {
     title: "Cocktailedge",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/cocktailege.png"),
+    modalImage: require("../../assets/projects-image/kari.jpg"),
     language: "React, Material UI",
     pageLink: "test",
     githubLink: "test",
@@ -28,16 +31,8 @@ const projectsData = [
   },
   {
     title: "Sound Mart",
-    image: require("../../assets/projects-image/kari.jpg"),
-    language: "HTML, CSS, Javascript",
-    pageLink: "test",
-    githubLink: "test",
-    description:
-      "The store page for purchasing BGM. It has trial listening feature and adding items to a cart and deleting items from a cart feature. The number and price in the cart changes depending on items in there. It was a pair poject to practice Javascript with HTML and CSS.",
-  },
-  {
-    title: "Sound Mart",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/soundmart.png"),
+    modalImage: require("../../assets/projects-image/soundmart.png"),
     language: "HTML, CSS, Javascript",
     pageLink: "test",
     githubLink: "test",
@@ -46,7 +41,8 @@ const projectsData = [
   },
   {
     title: "UDI Lab",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/udi-multi.png"),
+    modalImage: require("../../assets/projects-image/udi.png"),
     language: "HTML, SCSS",
     pageLink: "test",
     githubLink: "test",
@@ -55,7 +51,8 @@ const projectsData = [
   },
   {
     title: "Light Night Lamp",
-    image: require("../../assets/projects-image/kari.jpg"),
+    image: require("../../assets/projects-image/light-multi.png"),
+    modalImage: require("../../assets/projects-image/light.png"),
     language: "HTML, CSS",
     pageLink: "test",
     githubLink: "test",

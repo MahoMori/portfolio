@@ -17,13 +17,14 @@ import {
 } from "./projectModal.style";
 
 const ProjectModal = ({ data, handleModalOpen }) => {
-  const { title, image, language, pageLink, githubLink, description } = data;
+  const { title, modalImage, language, pageLink, githubLink, description } =
+    data;
   return ReactDOM.createPortal(
     <>
       <ModalOverlay onClick={handleModalOpen}></ModalOverlay>
       <ModalCard>
         <ModalContent>
-          <ModalImage src={image} alt="project" />
+          <ModalImage src={modalImage} alt="project" />
           <ModalTitle>{title}</ModalTitle>
           <Language>{language}</Language>
           <ModalIconContainer>
