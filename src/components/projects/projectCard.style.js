@@ -10,7 +10,6 @@ export const Card = styled.figure`
   cursor: pointer;
 
   overflow: hidden;
-  height: 100%;
 
   &:hover figcaption,
   &:active figcaption {
@@ -20,7 +19,9 @@ export const Card = styled.figure`
 
 export const CardImage = styled.img`
   width: 100%;
+  // height: 21rem;
   height: 100%;
+  // object-fit: contain;
 `;
 
 const oneThreeColumns = (i) => {
