@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Resume from "../../assets/Resume_Maho_Morinaga.pdf";
+import Resume from "../../assets/Resume_Maho Morinaga.pdf";
 
 import {
   HeaderContainer,
