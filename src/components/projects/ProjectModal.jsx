@@ -9,6 +9,7 @@ import {
   ModalCard,
   ModalContent,
   ModalImage,
+  ModalVideo,
   ModalTitle,
   ModalIconContainer,
   ModalStyledLink,
@@ -17,14 +18,30 @@ import {
 } from "./projectModal.style";
 
 const ProjectModal = ({ data, handleModalOpen }) => {
-  const { title, modalImage, language, pageLink, githubLink, description } =
-    data;
+  const {
+    title,
+    modalImage,
+    modalVideoMp4,
+    modalVideoOgg,
+    language,
+    pageLink,
+    githubLink,
+    description,
+  } = data;
   return ReactDOM.createPortal(
     <>
       <ModalOverlay onClick={handleModalOpen}></ModalOverlay>
       <ModalCard>
         <ModalContent>
-          <ModalImage src={modalImage} alt="project" />
+          {modalImage === "none" ? (
+            <ModalVideo autoPlay loop muted>
+              <source src={modalVideoMp4} type="video/mp4" />
+              <source src={modalVideoOgg} type="video/ogg" />
+              Your browser does not support the video tag.
+            </ModalVideo>
+          ) : (
+            <ModalImage src={modalImage} alt="project" />
+          )}
           <ModalTitle>{title}</ModalTitle>
           <Language>{language}</Language>
           <ModalIconContainer>

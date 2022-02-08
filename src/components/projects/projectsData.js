@@ -2,7 +2,9 @@ const projectsData = [
   {
     title: "Space Gallery",
     image: require("../../assets/projects-image/space-gallery.png"),
-    modalImage: require("../../assets/projects-image/kari.jpg"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/space-gallery-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/space-gallery-video.ogg"),
     language: "React, styled-components",
     pageLink: "test",
     githubLink: "test",
@@ -12,7 +14,9 @@ const projectsData = [
   {
     title: "To Go/To Do List",
     image: require("../../assets/projects-image/togo.png"),
-    modalImage: require("../../assets/projects-image/kari.jpg"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/togo-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/togo-video.ogg"),
     language: "React, Redux toolkit, Material UI",
     pageLink: "test",
     githubLink: "test",
@@ -22,7 +26,9 @@ const projectsData = [
   {
     title: "Cocktailedge",
     image: require("../../assets/projects-image/cocktailege.png"),
-    modalImage: require("../../assets/projects-image/kari.jpg"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/cocktailege-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/cocktailege-video.ogg"),
     language: "React, Material UI",
     pageLink: "test",
     githubLink: "test",

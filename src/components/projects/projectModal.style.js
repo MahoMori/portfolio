@@ -61,6 +61,12 @@ export const ModalImage = styled.img`
   margin-bottom: 0.5rem;
 `;
 
+export const ModalVideo = styled.video`
+  width: 100%;
+
+  margin-bottom: 0.5rem;
+`;
+
 export const ModalTitle = styled.h3`
   margin-bottom: 0.25rem;
 
