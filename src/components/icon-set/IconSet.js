@@ -11,10 +11,13 @@ const IconSet = () => (
     <StyledLink href="mailto:tr27e1104@gmail.com">
       <FontAwesomeIcon icon={faEnvelope} />
     </StyledLink>
-    <StyledLink href="https://www.linkedin.com/in/maho-morinaga/">
+    <StyledLink
+      href="https://www.linkedin.com/in/maho-morinaga/"
+      target="_blank"
+    >
       <FontAwesomeIcon icon={faLinkedin} />
     </StyledLink>
-    <StyledLink href="https://github.com/MahoMori">
+    <StyledLink href="https://github.com/MahoMori" target="_blank">
       <FontAwesomeIcon icon={faGithub} />
     </StyledLink>
   </IconContainer>

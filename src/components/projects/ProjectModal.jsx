@@ -45,11 +45,11 @@ const ProjectModal = ({ data, handleModalOpen }) => {
           <ModalTitle>{title}</ModalTitle>
           <Language>{language}</Language>
           <ModalIconContainer>
-            <ModalStyledLink href={pageLink}>
+            <ModalStyledLink href={pageLink} target="_blank">
               <FontAwesomeIcon icon={faGlobe} />
             </ModalStyledLink>
 
-            <ModalStyledLink href={githubLink}>
+            <ModalStyledLink href={githubLink} target="_blank">
               <FontAwesomeIcon icon={faGithub} />
             </ModalStyledLink>
           </ModalIconContainer>
