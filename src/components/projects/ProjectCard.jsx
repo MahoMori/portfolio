@@ -20,9 +20,15 @@ const ProjectCard = ({ data, i }) => {
 
   return (
     <>
-      <Card onClick={isAboveLaptop ? handleModalOpen : ""} ontouchstart="">
+      <Card
+        onClick={() => (isAboveLaptop ? handleModalOpen() : "")}
+        ontouchstart=""
+      >
         <CardImage src={data.image} alt="project" />
-        <CardImageCaption i={i} onClick={isAboveLaptop ? "" : handleModalOpen}>
+        <CardImageCaption
+          i={i}
+          onClick={() => (isAboveLaptop ? "" : handleModalOpen())}
+        >
           <CaptionP>{data.title}</CaptionP>
         </CardImageCaption>
       </Card>
