@@ -26,8 +26,8 @@ export const ModalCard = styled.div`
   border-radius: 0.5rem;
 
   @media ${device.mobileS} {
-    height: 85vh;
-    width: 90vw;
+    height: 80vh;
+    width: 85vw;
   }
 
   @media ${device.laptop} {

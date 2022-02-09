@@ -3,6 +3,8 @@ import { color } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
 export const Card = styled.figure`
+  height: auto;
+
   position: relative;
 
   box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(137, 137, 137, 0.3);
@@ -20,6 +22,7 @@ export const Card = styled.figure`
 export const CardImage = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: fill;
 `;
 
 const oneThreeColumns = (i) => {

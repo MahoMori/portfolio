@@ -34,7 +34,7 @@ const ProjectModal = ({ data, handleModalOpen }) => {
       <ModalCard>
         <ModalContent>
           {modalImage === "none" ? (
-            <ModalVideo autoPlay loop muted>
+            <ModalVideo autoPlay loop>
               <source src={modalVideoMp4} type="video/mp4" />
               <source src={modalVideoOgg} type="video/ogg" />
               Your browser does not support the video tag.
