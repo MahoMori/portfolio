@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useMedia } from "use-media";
-import "./safari.css";
 
 import ProjectModal from "./ProjectModal";
 
@@ -25,7 +24,7 @@ const ProjectCard = ({ data, i }) => {
         onClick={() => (isAboveLaptop ? handleModalOpen() : "")}
         ontouchstart=""
       >
-        <CardImage src={data.image} alt="project" className="safari" />
+        <CardImage src={data.image} alt="project" />
         <CardImageCaption
           i={i}
           onClick={() => (isAboveLaptop ? "" : handleModalOpen())}

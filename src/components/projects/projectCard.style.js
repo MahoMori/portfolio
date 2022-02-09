@@ -18,9 +18,9 @@ export const Card = styled.figure`
 `;
 
 export const CardImage = styled.img`
+  display: block;
   width: 100%;
   height: 100%;
-  -webkit-appearance: none;
 `;
 
 const oneThreeColumns = (i) => {
