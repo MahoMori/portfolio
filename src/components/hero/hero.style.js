@@ -5,8 +5,6 @@ import { device } from "../../assets/screenSize";
 export const HeroSection = styled.section`
   background-color: ${color.orange};
 
-  // height: calc(100vh * 0.9);
-  // height: 100vh;
   height: contain;
 
   text-align: center;
@@ -16,9 +14,6 @@ export const HeroSection = styled.section`
 `;
 
 export const Container = styled.div`
-  // background-color: skyblue;
-
-  // max-width: 70vw;
   max-width: 90vw;
 
   display: flex;
@@ -26,7 +21,6 @@ export const Container = styled.div`
   @media ${device.mobileS} {
     padding: 1rem 0;
 
-    // flex-wrap: wrap-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -59,14 +53,10 @@ export const MyImgIcon = styled.img`
 `;
 
 export const TextIconContainer = styled.div`
-  // background-color: pink;
-
   width: 100%;
   height: fit-content;
 
   & > div:nth-child(2) {
-    // background-color: yellow;
-
     @media ${device.mobileS} {
       margin: 1rem 0;
     }
@@ -97,21 +87,6 @@ export const NameTextBlock = styled.div`
 
 export const NameDecoratedSpan = styled.span`
   font-size: 1.35em;
-  // @media ${device.mobileS} {
-  //   font-size: 1.25em;
-  // }
-
-  // @media ${device.tablet} {
-  //   font-size: 1.4em;
-  // }
-
-  // @media ${device.laptop} {
-  //   font-size: 1.65em;
-  // }
-
-  // @media ${device.laptop} {
-  //   font-size: 1.65em;
-  // }
 
   text-shadow: 0.05em 0.05em ${color.white};
 `;
@@ -120,10 +95,6 @@ export const TextBlock = styled.div`
   @media ${device.mobileS} {
     font-size: 1.75rem;
   }
-
-  // @media ${device.tablet} {
-  //   font-size: 1.75rem;
-  // }
 
   @media ${device.laptop} {
     font-size: 2.25rem;
@@ -136,17 +107,6 @@ export const TextBlock = styled.div`
 
 export const DecoratedSpan = styled.span`
   font-size: 1.25em;
-  // @media ${device.mobileS} {
-  //   font-size: 1em;
-  // }
-
-  // @media ${device.tablet} {
-  //   font-size: 1.25em;
-  // }
-
-  // @media ${device.laptop} {
-  //   font-size: 1.5em;
-  // }
 
   text-shadow: 0.05em 0.05em ${color.white};
 `;

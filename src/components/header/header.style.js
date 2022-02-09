@@ -16,8 +16,6 @@ export const HeaderContainer = styled.header`
 `;
 
 export const NameDiv = styled.div`
-  // cursor: pointer;
-
   @media ${device.mobileS} {
     font-size: 1rem;
   }
@@ -54,8 +52,6 @@ export const HeaderNav = styled.nav`
 
 export const NavUl = styled.ul`
   @media ${device.mobileS} and (max-width: 767px) {
-    // background-color: skyblue;
-
     width: 50%;
     height: 100%;
 

@@ -1,3 +1,13 @@
+// title: project title,
+// image: thumbnail image,
+// modalImage: image displayed on modal (if it's video, write "none")
+// modalVideoMp4: mp4 displayed on modal,
+// modalVideoOgg: ogg displayed on modal,
+// language: used languages and libraries,
+// pageLink: deployed website link,
+// githubLink: github link,
+// description: description
+
 const projectsData = [
   {
     title: "Space Gallery",

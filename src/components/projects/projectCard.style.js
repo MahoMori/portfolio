@@ -77,6 +77,4 @@ export const CaptionP = styled.p`
   @media ${device.laptopL} {
     font-size: 3rem;
   }
-
-  //   font-weight: bold;
 `;

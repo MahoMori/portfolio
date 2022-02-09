@@ -44,8 +44,6 @@ export const ModalCard = styled.div`
 export const ModalContent = styled.div`
   text-align: center;
 
-  // height: 100%;
-
   @media ${device.mobileS} {
     margin: 0.75rem;
   }
