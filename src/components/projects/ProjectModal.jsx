@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom";
+import { useMedia } from "use-media";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +19,8 @@ import {
 } from "./projectModal.style";
 
 const ProjectModal = ({ data, handleModalOpen }) => {
+  const isAboveLaptop = useMedia({ minWidth: "1024px" });
+
   const {
     title,
     modalImage,
@@ -28,13 +31,14 @@ const ProjectModal = ({ data, handleModalOpen }) => {
     githubLink,
     description,
   } = data;
+
   return ReactDOM.createPortal(
     <>
       <ModalOverlay onClick={handleModalOpen}></ModalOverlay>
       <ModalCard>
         <ModalContent>
           {modalImage === "none" ? (
-            <ModalVideo autoPlay loop>
+            <ModalVideo autoPlay={isAboveLaptop ? "autoPlay" : ""} loop>
               <source src={modalVideoMp4} type="video/mp4" />
               <source src={modalVideoOgg} type="video/ogg" />
               Your browser does not support the video tag.
