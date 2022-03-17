@@ -10,6 +10,18 @@
 
 const projectsData = [
   {
+    title: "Grocery Budget Calculator",
+    image: require("../../assets/projects-image/budget.png"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/budget-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/budget-video.ogg"),
+    language: "React, Redux toolkit, TypeScript, styled-components",
+    pageLink: "https://grocery-budget-calculator.netlify.app",
+    githubLink: "https://github.com/MahoMori/budget-calculator",
+    description:
+      "The web application that keeps track of budget. The users enter their budget, and the app calculates and shows how much they can spend within their budget when items are added. Items can be edited and deleted. When the total price exceeds the budget,  the budget text changes its color to red.",
+  },
+  {
     title: "Space Gallery",
     image: require("../../assets/projects-image/space-gallery.png"),
     modalImage: "none",
@@ -27,7 +39,7 @@ const projectsData = [
     modalImage: "none",
     modalVideoMp4: require("../../assets/projects-image/togo-video.mp4"),
     modalVideoOgg: require("../../assets/projects-image/togo-video.ogg"),
-    language: "React, Redux toolkit, Material UI",
+    language: "React, Redux toolkit, Material UI, Firebase",
     pageLink: "https://togo-todo-list.netlify.app",
     githubLink: "https://github.com/MahoMori/to-go-list.git",
     description:
