@@ -39,7 +39,8 @@ const projectsData = [
     modalImage: "none",
     modalVideoMp4: require("../../assets/projects-image/togo-video.mp4"),
     modalVideoOgg: require("../../assets/projects-image/togo-video.ogg"),
-    language: "React, Redux toolkit, Material UI, Firebase",
+    language: "React, Redux toolkit, Material UI",
+    // language: "React, Redux toolkit, Material UI, Firebase",
     pageLink: "https://togo-todo-list.netlify.app",
     githubLink: "https://github.com/MahoMori/to-go-list.git",
     description:
