@@ -10,6 +10,19 @@
 
 const projectsData = [
   {
+    title: "Vancouver Hot Chocolate Adventure",
+    image: require("../../assets/projects-image/hotchoco.png"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/hotchoco-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/hotchoco-video.ogg"),
+    language: "React, Redux toolkit, TypeScript, styled-components, Firebase",
+    pageLink: "https://vancouver-hot-chocolate-adventure.netlify.app",
+    githubLink: "https://github.com/MahoMori/van-hotchoco-adventure",
+    description:
+      'Using Geoplocation API, this web application compares user\'s location and a shop location. If they are close enough, the user can check the store as "Been To". The shops and hot chocolate flavours are based on Greater Vancouver Hot Chocolate Festival. All shop data is stored in Firebase.',
+  },
+
+  {
     title: "Grocery Budget Calculator",
     image: require("../../assets/projects-image/budget.png"),
     modalImage: "none",
@@ -21,6 +34,7 @@ const projectsData = [
     description:
       "The web application that keeps track of budget. The users enter their budget, and the app calculates and shows how much they can spend within their budget when items are added. Items can be edited and deleted. When the total price exceeds the budget,  the budget text changes its color to red.",
   },
+
   {
     title: "Space Gallery",
     image: require("../../assets/projects-image/space-gallery.png"),
@@ -33,6 +47,7 @@ const projectsData = [
     description:
       'The image gallery that users can like and unlike pictures using NASA Astronomy Picture of the Day API. By clicking the icon on top right, the image is saved to a local data and can be viewed on "My Favourits" page even after reloading the website. Images can be removed from favourites by clicking the icon again.',
   },
+
   {
     title: "To Go/To Do List",
     image: require("../../assets/projects-image/togo.png"),
@@ -48,6 +63,7 @@ const projectsData = [
     // description:
     //   "The website that users can add, edit and delete lists of places to go and things to do. It has complete CRUD feature. It uses Firebase for signing up and logging in feature so that the list can be for a group of specific people. When users log in, they have their own panels for an individual list for each person.",
   },
+
   {
     title: "Cocktailedge",
     image: require("../../assets/projects-image/cocktailege.png"),
@@ -60,6 +76,7 @@ const projectsData = [
     description:
       "The website to search cocktails by name and ingredients using TheCocktailDB API. It also has a list page of cocktails sorted by alphaneumeric order. The modal pops up when each image is clicked and contains information about the cocktail.",
   },
+
   {
     title: "Sound Mart",
     image: require("../../assets/projects-image/soundmart.png"),
@@ -70,6 +87,7 @@ const projectsData = [
     description:
       "The store page for purchasing BGM. It has trial listening feature and adding items to a cart and deleting items from a cart feature. The number and price in the cart changes depending on items in there. It was a pair poject to practice Javascript with HTML and CSS.",
   },
+
   {
     title: "UDI Lab",
     image: require("../../assets/projects-image/udi-multi.png"),
@@ -80,6 +98,7 @@ const projectsData = [
     description:
       "The landing page design for Unnatural Death Investigation Institution. It is a fan made website based on a Japanese drama. The bottom right icon brings users to the top of the website and there is a hamburger menu when viewing in smaller screen than a laptop.",
   },
+
   {
     title: "Light Night Lamp",
     image: require("../../assets/projects-image/light-multi.png"),
