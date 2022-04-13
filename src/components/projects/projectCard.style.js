@@ -69,6 +69,7 @@ export const CardImageCaption = styled.figcaption`
 
 export const CaptionP = styled.p`
   color: ${color.white};
+  text-align: center;
 
   @media ${device.mobileS} {
     font-size: 2rem;
