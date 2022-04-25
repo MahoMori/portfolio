@@ -1,9 +1,7 @@
 import ReactDOM from "react-dom";
 import { useMedia } from "use-media";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FaGlobe, FaGithub, FaFigma } from "react-icons/fa";
 
 import {
   ModalOverlay,
@@ -29,6 +27,7 @@ const ProjectModal = ({ data, handleModalOpen }) => {
     language,
     pageLink,
     githubLink,
+    figmaLink,
     description,
   } = data;
 
@@ -50,12 +49,18 @@ const ProjectModal = ({ data, handleModalOpen }) => {
           <Language>{language}</Language>
           <ModalIconContainer>
             <ModalStyledLink href={pageLink} target="_blank">
-              <FontAwesomeIcon icon={faGlobe} />
+              <FaGlobe />
             </ModalStyledLink>
 
             <ModalStyledLink href={githubLink} target="_blank">
-              <FontAwesomeIcon icon={faGithub} />
+              <FaGithub />
             </ModalStyledLink>
+
+            {figmaLink && (
+              <ModalStyledLink href={figmaLink} target="_blank">
+                <FaFigma />
+              </ModalStyledLink>
+            )}
           </ModalIconContainer>
           <Description>{description}</Description>
         </ModalContent>

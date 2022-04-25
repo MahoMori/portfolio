@@ -103,25 +103,36 @@ export const Language = styled.p`
 `;
 
 export const ModalIconContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media ${device.mobileS} {
     font-size: 1.6rem;
-    margin: 0.25rem 0;
+    margin: 0.7rem auto;
+
+    width: 60%;
   }
 
   @media ${device.tablet} {
     font-size: 1.75rem;
-    margin: 0.5rem 0;
+    margin: 1rem auto;
+    width: 50%;
   }
 
   @media ${device.desktop} {
     font-size: 2.75rem;
-    margin: 0.75rem 0;
+    margin: 1.25rem auto;
+    width: 40%;
   }
 `;
 
 export const ModalStyledLink = styled(StyledLink)`
+  display: flex;
+  align-items: center;
+
   color: #000;
-  margin: 0 1.5rem;
+  /* margin: 0 1.5rem; */
 `;
 
 export const Description = styled.p`

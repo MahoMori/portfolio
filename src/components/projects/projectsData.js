@@ -6,6 +6,7 @@
 // language: used languages and libraries,
 // pageLink: deployed website link,
 // githubLink: github link,
+// figmaLink: figma link (if applicable),
 // description: description
 
 const projectsData = [
@@ -18,6 +19,8 @@ const projectsData = [
     language: "React, Redux toolkit, TypeScript, styled-components, Firebase",
     pageLink: "https://vancouver-hot-chocolate-adventure.netlify.app",
     githubLink: "https://github.com/MahoMori/van-hotchoco-adventure",
+    figmaLink:
+      "https://www.figma.com/file/gXOsP3r6LcIChVVKqX95iN/Vancouver-Hot-Chocolate-Adventure-Design-Draft?node-id=0%3A1",
     description:
       'Using Geoplocation API, this web application compares user\'s location and a shop location. If they are close enough, the user can check the store as "Been To". The shops and hot chocolate flavours are based on Greater Vancouver Hot Chocolate Festival. All shop data is stored in Firebase.',
   },
@@ -31,6 +34,8 @@ const projectsData = [
     language: "React, Redux toolkit, TypeScript, styled-components",
     pageLink: "https://grocery-budget-calculator.netlify.app",
     githubLink: "https://github.com/MahoMori/budget-calculator",
+    figmaLink:
+      "https://www.figma.com/file/zfGsu4tn19uQ2HQzWbrzLm/Budget-Calculator?node-id=0%3A1",
     description:
       "The web application that keeps track of budget. The users enter their budget, and the app calculates and shows how much they can spend within their budget when items are added. Items can be edited and deleted. When the total price exceeds the budget,  the budget text changes its color to red.",
   },

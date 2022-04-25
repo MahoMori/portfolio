@@ -1,8 +1,8 @@
 import IconSet from "../icon-set/IconSet";
 
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-import { FooterContainer, StyledLink, LinkIcon } from "./footer.style";
+import { FooterContainer, StyledLink } from "./footer.style";
 
 const Footer = () => (
   <FooterContainer>
@@ -11,7 +11,7 @@ const Footer = () => (
       Top Illustration by{" "}
       <StyledLink href="https://picrew.me/image_maker/701767" target="_blank">
         Picrew 껍질-미리깐 메이커&nbsp;
-        <LinkIcon icon={faExternalLinkAlt} />
+        <FaExternalLinkAlt />
       </StyledLink>
     </p>
   </FooterContainer>
