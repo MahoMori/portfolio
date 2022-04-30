@@ -11,6 +11,18 @@
 
 const projectsData = [
   {
+    title: "Tongue Twister Game",
+    image: require("../../assets/projects-image/tongue-twister.png"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/tongue-twister-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/tongue-twister-video.ogg"),
+    language: "HTML, CSS, JavaScript",
+    pageLink: "https://tongue-twister-game.netlify.app/",
+    githubLink: "https://github.com/MahoMori/tongue-twister",
+    description:
+      "It is a tongue twister game which is coded with pure JavaScript. It uses Voice Recognition API and checks if a player is able to say a tongue twister shown on a screen. At the end of the game or after the player quits, the result based on how many tongue twisters they were able to say will be presented",
+  },
+  {
     title: "Vancouver Hot Chocolate Adventure",
     image: require("../../assets/projects-image/hotchoco.png"),
     modalImage: "none",
