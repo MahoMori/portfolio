@@ -1,49 +1,58 @@
 import styled from "styled-components";
 
-import { color } from "../../globalStyle";
+import { color, sansSerif } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
-export const SkillsDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
+export const SkillsContainer = styled.div`
+  ${sansSerif.import}
+  ${sansSerif.fontFamily}
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   margin: 2.5rem auto;
-
-  @media ${device.mobileS} {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-bottom: solid 3px
-      ${(props) => (props.kw === "skills" ? color.skyBlue : color.lightGreen)};
-    padding-bottom: 0.5rem;
-  }
+  font-size: 1.5rem;
+  line-height: 2rem;
 
   @media ${device.tablet} {
-    border-bottom: none;
-    padding-bottom: 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media ${device.laptop} {
-    width: 70%;
+  @media ${device.laptopL} {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+`;
+
+export const SkillsCard = styled.div`
+  height: auto;
+  padding: 0 1rem 1rem;
+  box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(137, 137, 137, 0.3);
+
+  background: ${(props) => color[props.color]};
+
+  @media ${device.tablet} {
+    padding: 0 1.5rem 1.5rem;
   }
 
-  & * {
-    @media ${device.mobileS} {
-      font-size: 2rem;
-    }
+  & div {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    @media ${device.tablet} {
-      font-size: 2.5rem;
-      box-shadow: 3px 3px 0
-          ${(props) =>
-            props.kw === "skills" ? color.skyBlue : color.lightGreen},
-        -3px -3px 0
-          ${(props) =>
-            props.kw === "skills" ? color.skyBlue : color.lightGreen};
-      padding: 0.3rem;
-    }
+  & h3 {
+    padding: 0 1.5rem;
+    text-align: center;
+  }
 
-    @media ${device.desktop} {
-      font-size: 3rem;
-      padding: 0.5rem;
-    }
+  & p {
+    display: flex;
+    align-items: center;
+  }
+
+  & svg {
+    margin-right: 1rem;
   }
 `;
