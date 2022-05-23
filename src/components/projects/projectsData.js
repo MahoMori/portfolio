@@ -11,6 +11,18 @@
 
 const projectsData = [
   {
+    title: "Creative Product Generator",
+    image: require("../../assets/projects-image/product-generator.png"),
+    modalImage: "none",
+    modalVideoMp4: require("../../assets/projects-image/product-generator-video.mp4"),
+    modalVideoOgg: require("../../assets/projects-image/product-generator-video.ogg"),
+    language: "React, Redux toolkit, TypeScript, styled components, OpenAI API",
+    pageLink: "https://product-generator.netlify.app/",
+    githubLink: "https://github.com/MahoMori/product-generator",
+    description:
+      "This application generates a random product ad and product name by using OpenAI API. The user can generate ads and names multiplle times and choose one each. They can share the generated product on social media and messaging app.",
+  },
+  {
     title: "Tongue Twister Game",
     image: require("../../assets/projects-image/tongue-twister.png"),
     modalImage: "none",
@@ -20,7 +32,7 @@ const projectsData = [
     pageLink: "https://tongue-twister-game.netlify.app/",
     githubLink: "https://github.com/MahoMori/tongue-twister",
     description:
-      "It is a tongue twister game which is coded with pure JavaScript. It uses Voice Recognition API and checks if a player is able to say a tongue twister shown on a screen. At the end of the game or after the player quits, the result based on how many tongue twisters they were able to say will be presented",
+      "It is a tongue twister game which is coded with pure JavaScript. It uses Voice Recognition API and checks if a player is able to say a tongue twister shown on a screen. At the end of the game or after the player quits, the result based on how many tongue twisters they were able to say will be presented.",
   },
   {
     title: "Vancouver Hot Chocolate Adventure",
@@ -28,7 +40,7 @@ const projectsData = [
     modalImage: "none",
     modalVideoMp4: require("../../assets/projects-image/hotchoco-video.mp4"),
     modalVideoOgg: require("../../assets/projects-image/hotchoco-video.ogg"),
-    language: "React, Redux toolkit, TypeScript, styled-components, Firebase",
+    language: "React, Redux toolkit, TypeScript, styled components, Firebase",
     pageLink: "https://vancouver-hot-chocolate-adventure.netlify.app",
     githubLink: "https://github.com/MahoMori/van-hotchoco-adventure",
     figmaLink:
@@ -43,7 +55,7 @@ const projectsData = [
     modalImage: "none",
     modalVideoMp4: require("../../assets/projects-image/budget-video.mp4"),
     modalVideoOgg: require("../../assets/projects-image/budget-video.ogg"),
-    language: "React, Redux toolkit, TypeScript, styled-components",
+    language: "React, Redux toolkit, TypeScript, styled components",
     pageLink: "https://grocery-budget-calculator.netlify.app",
     githubLink: "https://github.com/MahoMori/budget-calculator",
     figmaLink:
@@ -58,7 +70,7 @@ const projectsData = [
     modalImage: "none",
     modalVideoMp4: require("../../assets/projects-image/space-gallery-video.mp4"),
     modalVideoOgg: require("../../assets/projects-image/space-gallery-video.ogg"),
-    language: "React, styled-components",
+    language: "React, styled components",
     pageLink: "https://space-gallery-mm.netlify.app",
     githubLink: "https://github.com/MahoMori/intern-challenge.git",
     description:

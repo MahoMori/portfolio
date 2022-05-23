@@ -37,10 +37,10 @@ const Hero = () => {
           </NameTextBlock>
           <TextBlock>
             <p>
-              I’m a <DecoratedSpan>Frontend&nbsp;Developer</DecoratedSpan>
+              I’m a <DecoratedSpan>Full&nbsp;Stack </DecoratedSpan>Developer
             </p>
             <p>
-              focusing on <DecoratedSpan>React</DecoratedSpan>
+              who is <DecoratedSpan>Technology Agnostic</DecoratedSpan>
             </p>
             <p>and passionate about learning new&nbsp;skills!</p>
           </TextBlock>
