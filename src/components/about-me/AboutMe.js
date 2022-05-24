@@ -14,7 +14,7 @@ const AboutMe = () => (
     <AboutMeText>
       <p>
         I started this tech path in 2021. It has been challenging, but each
-        challenges taught me the most important thing.
+        challenge has taught me the most important thing.
       </p>
 
       <p>
