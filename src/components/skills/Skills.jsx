@@ -10,13 +10,12 @@ import {
   SiGraphql,
   SiReact,
   SiRedux,
-  SiMongodb,
   SiFirebase,
 } from "react-icons/si";
-import { FaSass, FaNodeJs, FaGithub, FaFigma } from "react-icons/fa";
+import { FaSass, FaGithub, FaFigma } from "react-icons/fa";
 import { GrCycle } from "react-icons/gr";
 
-import { SkillsContainer, SkillsCard, SkillsDiv } from "./Skills.style";
+import { SkillsContainer, SkillsCard } from "./Skills.style";
 
 import {
   SectionContainer,
@@ -32,7 +31,6 @@ const Skills = () => {
       </TitleContainer>
 
       <SkillsContainer>
-        {/* skills */}
         <SkillsCard color={"orange"}>
           <div>
             <h3>Languages</h3>
@@ -88,11 +86,6 @@ const Skills = () => {
             <SiStyledcomponents />
             styled components
           </p>
-
-          <p>
-            <FaNodeJs />
-            Node.js
-          </p>
         </SkillsCard>
 
         <SkillsCard color={"darkPink"}>
@@ -103,11 +96,6 @@ const Skills = () => {
           <p>
             <FaGithub />
             GitHub
-          </p>
-
-          <p>
-            <SiMongodb />
-            MongoDB
           </p>
 
           <p>
