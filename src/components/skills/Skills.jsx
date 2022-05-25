@@ -16,7 +16,7 @@ import {
 import { FaSass, FaNodeJs, FaGithub, FaFigma } from "react-icons/fa";
 import { GrCycle } from "react-icons/gr";
 
-import { SkillsContainer, SkillsCard, SkillsDiv } from "./Skills.style";
+import { SkillsContainer, SkillsCard } from "./Skills.style";
 
 import {
   SectionContainer,
@@ -32,7 +32,6 @@ const Skills = () => {
       </TitleContainer>
 
       <SkillsContainer>
-        {/* skills */}
         <SkillsCard color={"orange"}>
           <div>
             <h3>Languages</h3>
