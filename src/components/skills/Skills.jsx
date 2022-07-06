@@ -12,6 +12,7 @@ import {
   SiRedux,
   SiMongodb,
   SiFirebase,
+  SiMysql,
 } from "react-icons/si";
 import { FaSass, FaNodeJs, FaGithub, FaFigma } from "react-icons/fa";
 import { GrCycle } from "react-icons/gr";
@@ -112,6 +113,11 @@ const Skills = () => {
           <p>
             <SiFirebase />
             Firebase
+          </p>
+
+          <p>
+            <SiMysql />
+            MySQL
           </p>
         </SkillsCard>
 
