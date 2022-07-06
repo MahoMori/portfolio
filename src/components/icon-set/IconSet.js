@@ -3,8 +3,8 @@ import { StyledLink } from "../../globalStyle";
 
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
-const IconSet = () => (
-  <IconContainer>
+const IconSet = ({ iconColor }) => (
+  <IconContainer iconColor={iconColor}>
     <StyledLink href="mailto:tr27e1104@gmail.com">
       <FaEnvelope />
     </StyledLink>

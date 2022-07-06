@@ -6,7 +6,6 @@ export const FooterContainer = styled.footer`
   background-color: #ff8b49;
   text-align: center;
 
-  margin-top: 6rem;
   padding: 0.75rem 0;
 
   & > div:first-child {

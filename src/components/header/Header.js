@@ -31,7 +31,7 @@ const Header = () => {
             <StyledLink href="#project">Projects</StyledLink>
           </NavLi>
           <NavLi>
-            <StyledLink href="#about-me">About Me</StyledLink>
+            <StyledLink href="#contact">Contact</StyledLink>
           </NavLi>
           <NavLi>
             <StyledLink href={Resume} target="_blank">

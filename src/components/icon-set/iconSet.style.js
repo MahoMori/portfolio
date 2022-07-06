@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { color } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
 export const IconContainer = styled.div`
+  & > * {
+    color: ${(props) => (props.iconColor ? color[props.iconColor] : "")};
+  }
+
   @media ${device.mobileS} {
     font-size: 2rem;
 
