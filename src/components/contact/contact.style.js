@@ -92,7 +92,7 @@ export const RightPanel = styled.div`
   }
 
   & input {
-    height: 2rem;
+    height: 2.5rem;
     padding: 0 0.25rem;
   }
 

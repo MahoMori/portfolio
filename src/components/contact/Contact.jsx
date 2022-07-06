@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { init, send } from "emailjs-com";
 import IconSet from "../icon-set/IconSet";
 import {
@@ -11,31 +11,42 @@ import {
   FormButton,
 } from "./contact.style";
 
-const onClickSendMail = () => {
-  init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+const Contact = () => {
+  const [formContext, setFormContext] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-
-  const templateParams = {
-    from_name: "NANASHI",
-    email: "test@test.com",
-    message: "this is a message",
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setFormContext({ ...formContext, [e.target.name]: value });
   };
 
-  send(emailjsServiceId, emailjsTemplateId, templateParams).then(
-    (res) => {
-      // sent 200 OK
-      console.log("sent", res.status, res.text);
-    },
-    (error) => {
-      console.log("failed", error);
-    }
-  );
-};
-// onClickSendMail();
+  const onSubmitSendMail = (e) => {
+    e.preventDefault();
+    init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
 
-const Contact = () => {
+    const emailjsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const emailjsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+
+    const templateParams = {
+      from_name: formContext.name,
+      email: formContext.email,
+      message: formContext.message,
+    };
+
+    send(emailjsServiceId, emailjsTemplateId, templateParams).then(
+      (res) => {
+        // sent 200 OK
+        console.log("sent", res.status, res.text);
+      },
+      (error) => {
+        console.log("failed", error);
+      }
+    );
+  };
+
   return (
     <ContactSectionContainer id="contact">
       <ContactTitleContainer>
@@ -57,14 +68,25 @@ const Contact = () => {
         </LeftPanel>
 
         <RightPanel>
-          <form>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="Email" />
+          <form onSubmit={onSubmitSendMail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={handleChange}
+            />
             <textarea
               name="message"
               cols="30"
               rows="7"
               placeholder="Message"
+              onChange={handleChange}
             ></textarea>
             <FormButton type="submit">send message</FormButton>
           </form>
