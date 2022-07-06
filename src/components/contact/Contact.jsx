@@ -7,6 +7,7 @@ import {
   ContactTitleH2,
   PanelParentDiv,
   LeftPanel,
+  RightPanel,
   FormButton,
 } from "./contact.style";
 
@@ -54,14 +55,20 @@ const Contact = () => {
             <IconSet iconColor="skyBlue" />
           </div>
         </LeftPanel>
-        <div>
+
+        <RightPanel>
           <form>
-            <input type="text" name="name" />
-            <input type="text" name="email" />
-            <textarea name="message" cols="30" rows="10"></textarea>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <textarea
+              name="message"
+              cols="30"
+              rows="7"
+              placeholder="Message"
+            ></textarea>
             <FormButton type="submit">send message</FormButton>
           </form>
-        </div>
+        </RightPanel>
       </PanelParentDiv>
     </ContactSectionContainer>
   );

@@ -79,6 +79,47 @@ export const LeftPanel = styled.div`
   }
 `;
 
+export const RightPanel = styled.div`
+  text-align: center;
+
+  & input,
+  & textarea {
+    width: 85%;
+    font-size: 1.5rem;
+    ${sansSerif.import}
+    ${sansSerif.fontFamily}
+    border: solid ${color.skyBlue} 3px;
+  }
+
+  & input {
+    height: 2rem;
+    padding: 0 0.25rem;
+  }
+
+  & input:last-of-type {
+    margin: 0.5rem 0;
+  }
+
+  & textarea {
+    padding: 0.25rem;
+    resize: vertical;
+  }
+`;
+
 export const FormButton = styled.button`
   text-transform: uppercase;
+  margin: 1rem 0;
+  width: 35%;
+  height: 3.25rem;
+  background-color: ${color.skyBlue}99;
+  color: ${color.white};
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -5px #c2c2c2;
+  font-size: 1.25rem;
+
+  &:hover {
+    background-color: ${color.skyBlue};
+  }
 `;
