@@ -42,7 +42,8 @@ export const ContactTitleH2 = styled(TitleH2)`
   } */
 
   @media ${device.laptopL} {
-    font-size: 2rem;
+    /* font-size: 3.25rem; */
+    font-size: 3rem;
   }
 `;
 
@@ -59,8 +60,16 @@ export const LeftPanel = styled.div`
   ${sansSerif.fontFamily}
 
   & p {
+    /* font-size: 1.5rem;
+    line-height: 2rem; */
+
     font-size: 1.5rem;
     line-height: 2rem;
+
+    @media ${device.laptopL} {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+    }
   }
 
   & div {
