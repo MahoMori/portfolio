@@ -22,31 +22,14 @@ export const ContactTitleContainer = styled(TitleContainer)`
     padding-right: 0;
   }
 
-  /* @media ${device.tablet} {
-    width: 50vw;
-  } */
-
   @media ${device.laptop} {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
-  /* @media ${device.desktop} {
-    width: 40vw;
-  } */
 `;
 
 export const ContactTitleH2 = styled(TitleH2)`
-  /* @media ${device.mobileS} {
-    font-size: 1.75rem;
-  }
-
-  @media ${device.laptop} {
-    font-size: 2.25rem;
-  } */
-
   @media ${device.laptopL} {
-    /* font-size: 3.25rem; */
     font-size: 3rem;
   }
 `;
@@ -88,12 +71,12 @@ export const RightPanel = styled.div`
   & textarea {
     ${sansSerif.import}
     ${sansSerif.fontFamily}
-    border: solid ${color.skyBlue} 3px;
+    border: solid ${color.skyBlue} 3px !important;
     font-size: 1.2rem;
-    width: 90%;
+    width: 90% !important;
 
     @media ${device.tablet} {
-      width: 85%;
+      width: 85% !important;
       font-size: 1.5rem;
     }
   }
@@ -108,6 +91,8 @@ export const RightPanel = styled.div`
   }
 
   & textarea {
+    ${sansSerif.import}
+    ${sansSerif.fontFamily}
     padding: 0.25rem;
     resize: vertical;
   }
