@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { useMedia } from "use-media";
+import { useMediaQuery } from "usehooks-ts";
 
 import { FaGlobe, FaGithub, FaFigma } from "react-icons/fa";
 
@@ -17,7 +17,7 @@ import {
 } from "./projectModal.style";
 
 const ProjectModal = ({ data, handleModalOpen }) => {
-  const isAboveLaptop = useMedia({ minWidth: "1024px" });
+  const isAboveLaptop = useMediaQuery("(min-width: 1024px)");
 
   const {
     title,

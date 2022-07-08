@@ -1,4 +1,4 @@
-import { useMedia } from "use-media";
+import { useMediaQuery } from "usehooks-ts";
 
 import IconSet from "../icon-set/IconSet";
 
@@ -15,7 +15,7 @@ import {
 } from "./hero.style";
 
 const Hero = () => {
-  const isAboveTablet = useMedia({ minWidth: "768px" });
+  const isAboveTablet = useMediaQuery("(min-width: 768px)");
 
   return (
     <HeroSection>

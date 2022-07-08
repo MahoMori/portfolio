@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useMedia } from "use-media";
+import { useMediaQuery } from "usehooks-ts";
 
 import ProjectModal from "./ProjectModal";
 
@@ -16,7 +16,7 @@ const ProjectCard = ({ data, i }) => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
-  const isAboveLaptop = useMedia({ minWidth: "1024px" });
+  const isAboveLaptop = useMediaQuery("(min-width: 1024px)");
 
   return (
     <>
