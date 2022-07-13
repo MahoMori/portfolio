@@ -12,12 +12,12 @@ export const color = {
 };
 
 export const sansSerif = {
-  // import:
-  //   "@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');",
-  // fontFamily: "font-family: 'Source Sans Pro', sans-serif;",
   import:
-    "@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');",
-  fontFamily: "font-family: 'Raleway', sans-serif;",
+    "@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');",
+  fontFamily: "font-family: 'Source Sans Pro', sans-serif;",
+  // import:
+  //   "@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');",
+  // fontFamily: "font-family: 'Raleway', sans-serif;",
 };
 
 export const StyledLink = styled.a`
