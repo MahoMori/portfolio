@@ -72,8 +72,8 @@ export const RightPanel = styled.div`
     border: solid ${color.skyBlue} 3px;
     font-size: 1.2rem;
     width: 90%;
-    ${sansSerif.import}
-    ${sansSerif.fontFamily}
+    /* ${sansSerif.import}
+    ${sansSerif.fontFamily} */
 
     @media ${device.tablet} {
       width: 85%;
@@ -93,8 +93,8 @@ export const RightPanel = styled.div`
   & textarea {
     padding: 0.25rem;
     resize: vertical;
-    ${sansSerif.import}
-    ${sansSerif.fontFamily}
+    /* ${sansSerif.import}
+    ${sansSerif.fontFamily} */
   }
 `;
 
