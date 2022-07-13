@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, sansSerif, StyledLink } from "../../globalStyle";
+import { color, font, StyledLink } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
 export const ModalOverlay = styled.div`
@@ -84,8 +84,7 @@ export const ModalTitle = styled.h3`
 export const Language = styled.p`
   color: ${color.orange};
 
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
+  font-family: ${font.sourceSansPro};
 
   font-style: italic;
 
@@ -136,8 +135,7 @@ export const ModalStyledLink = styled(StyledLink)`
 `;
 
 export const Description = styled.p`
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
+  font-family: ${font.sourceSansPro};
 
   text-align: left;
   line-height: 1.6rem;

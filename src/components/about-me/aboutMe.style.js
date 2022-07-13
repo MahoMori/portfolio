@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import { color, sansSerif } from "../../globalStyle";
+import { color, font } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
 export const AboutMeText = styled.div`
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
-
+  font-family: ${font.sourceSansPro};
 
   margin: 2.5rem auto;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, sansSerif } from "../../globalStyle";
+import { color, font } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 import {
   SectionContainer,
@@ -44,8 +44,7 @@ export const PanelParentDiv = styled.div`
 `;
 
 export const LeftPanel = styled.div`
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
+  font-family: ${font.sourceSansPro};
 
   & p {
     font-size: 1.5rem;
@@ -66,8 +65,7 @@ export const LeftPanel = styled.div`
 
 export const RightPanel = styled.div`
   text-align: center;
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
+  font-family: "Source Sans Pro", sans-serif;
 
   & input,
   & textarea {
@@ -93,8 +91,7 @@ export const RightPanel = styled.div`
   & textarea {
     padding: 0.25rem;
     resize: vertical;
-    /* ${sansSerif.import}
-    ${sansSerif.fontFamily} */
+    font-family: "Source Sans Pro", sans-serif;
   }
 `;
 

@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
-import { color, sansSerif } from "../../globalStyle";
+import { color, font } from "../../globalStyle";
 import { device } from "../../assets/screenSize";
 
 export const SkillsContainer = styled.div`
-  ${sansSerif.import}
-  ${sansSerif.fontFamily}
+  font-family: ${font.sourceSansPro};
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;

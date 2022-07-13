@@ -11,13 +11,9 @@ export const color = {
   white: "#fff",
 };
 
-export const sansSerif = {
-  import:
-    "@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');",
-  fontFamily: "font-family: 'Source Sans Pro', sans-serif;",
-  // import:
-  //   "@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');",
-  // fontFamily: "font-family: 'Raleway', sans-serif;",
+export const font = {
+  zillaSlab: "'Zilla Slab', serif",
+  sourceSansPro: "'Source Sans Pro', sans-serif",
 };
 
 export const StyledLink = styled.a`
@@ -33,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior : smooth;
 }
 body {
-font-family: 'Zilla Slab', serif;
+  font-family: ${font.zillaSlab};
 }
 `;
 
