@@ -65,13 +65,13 @@ export const LeftPanel = styled.div`
 
 export const RightPanel = styled.div`
   text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
 
   & input,
   & textarea {
     border: solid ${color.skyBlue} 3px;
     font-size: 1.2rem;
     width: 90%;
+    font-family: ${font.sourceSansPro};
 
     @media ${device.tablet} {
       width: 85%;
@@ -91,7 +91,6 @@ export const RightPanel = styled.div`
   & textarea {
     padding: 0.25rem;
     resize: vertical;
-    font-family: "Source Sans Pro", sans-serif;
   }
 `;
 
