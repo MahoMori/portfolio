@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { init, send } from "emailjs-com";
+import { HeartSpinner } from "react-spinners-kit";
 import IconSet from "../icon-set/IconSet";
 import {
   ContactSectionContainer,
@@ -23,6 +24,8 @@ const Contact = () => {
     setFormContext({ ...formContext, [e.target.name]: value });
   };
 
+  const [isSending, setIsSending] = useState(false);
+
   const onSubmitSendMail = (e) => {
     e.preventDefault();
     init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
@@ -36,12 +39,22 @@ const Contact = () => {
       message: formContext.message,
     };
 
+    setIsSending(true);
+
     send(emailjsServiceId, emailjsTemplateId, templateParams).then(
       (res) => {
-        // sent 200 OK
+        setIsSending(false);
+        setFormContext({
+          name: "",
+          email: "",
+          message: "",
+        });
+        alert("Message sent! Thank you! <3");
         console.log("sent", res.status, res.text);
       },
       (error) => {
+        setIsSending(false);
+        alert("Something went wrong! Please submit again.");
         console.log("failed", error);
       }
     );
@@ -72,12 +85,14 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              value={formContext.name}
               placeholder="Name"
               onChange={handleChange}
             />
             <input
               type="email"
               name="email"
+              value={formContext.email}
               placeholder="Email"
               onChange={handleChange}
             />
@@ -85,10 +100,13 @@ const Contact = () => {
               name="message"
               cols="30"
               rows="7"
+              value={formContext.message}
               placeholder="Message"
               onChange={handleChange}
             ></textarea>
-            <FormButton type="submit">send message</FormButton>
+            <FormButton type="submit">
+              {isSending ? <HeartSpinner /> : "send message"}
+            </FormButton>
           </form>
         </RightPanel>
       </PanelParentDiv>

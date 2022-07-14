@@ -107,6 +107,10 @@ export const FormButton = styled.button`
   width: 80%;
   height: 3rem;
 
+  & * {
+    margin: 0 auto;
+  }
+
   @media ${device.tablet} {
     width: 35%;
   }
